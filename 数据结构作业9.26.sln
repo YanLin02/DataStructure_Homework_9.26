@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "数据结构作业9.26", "数据结构作业9.26\数据结构作业9.26.vcxproj", "{372C06F1-8C01-47C7-9C64-BAA7FF710579}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "数据结构思考题9.26", "数据结构思考题9.26\数据结构思考题9.26.vcxproj", "{062F1054-2C09-4DD6-A026-457E14181C91}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{372C06F1-8C01-47C7-9C64-BAA7FF710579}.Release|x64.Build.0 = Release|x64
 		{372C06F1-8C01-47C7-9C64-BAA7FF710579}.Release|x86.ActiveCfg = Release|Win32
 		{372C06F1-8C01-47C7-9C64-BAA7FF710579}.Release|x86.Build.0 = Release|Win32
+		{062F1054-2C09-4DD6-A026-457E14181C91}.Debug|x64.ActiveCfg = Debug|x64
+		{062F1054-2C09-4DD6-A026-457E14181C91}.Debug|x64.Build.0 = Debug|x64
+		{062F1054-2C09-4DD6-A026-457E14181C91}.Debug|x86.ActiveCfg = Debug|Win32
+		{062F1054-2C09-4DD6-A026-457E14181C91}.Debug|x86.Build.0 = Debug|Win32
+		{062F1054-2C09-4DD6-A026-457E14181C91}.Release|x64.ActiveCfg = Release|x64
+		{062F1054-2C09-4DD6-A026-457E14181C91}.Release|x64.Build.0 = Release|x64
+		{062F1054-2C09-4DD6-A026-457E14181C91}.Release|x86.ActiveCfg = Release|Win32
+		{062F1054-2C09-4DD6-A026-457E14181C91}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

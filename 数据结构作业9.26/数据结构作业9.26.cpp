@@ -41,14 +41,21 @@ int FastFind(const string& str, const string& pat) {
 
 int main()
 {
-	string test("1341119991215");
-	string pat("12");
-	cout << FastFind(test, pat);
+	//string test("1341119991215");
+	//string pat("12");
+	//cout << FastFind(test, pat);
 
+	string pat("ababbaabaa");
+	int LengthP = pat.length();
+	int* f = new int[LengthP];
 
+	FailureFunction(pat, f);
 
-
-
+	for (size_t i = 0; i < LengthP; i++)
+		cout << pat[i] << " \t";
+	cout << endl;
+	for (size_t i = 0; i < LengthP; i++)
+		cout << f[i] << " \t";
 
 	return 0;
 }
