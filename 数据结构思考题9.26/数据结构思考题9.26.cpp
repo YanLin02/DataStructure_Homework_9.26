@@ -83,10 +83,10 @@ SparseMatrix SparseMatrix::MyTranspose()
 	SparseMatrix b(cols, rows, terms);
 	if (terms > 0)
 	{
-		int* rowStart = new int[cols + 1];//多加一个位置
+		int* rowStart = new int[cols];//多加一个位置
 		fill(rowStart, rowStart + cols, 0);//全部置零
 
-		for (size_t i = 0; i < terms; i++) rowStart[smArray[i].col + 1]++;//把行大小放到要加的位置上
+		for (size_t i = 0; i < terms - 1; i++) rowStart[smArray[i].col + 1]++;//把行大小放到要加的位置上
 		for (size_t i = 1; i < cols; i++) rowStart[i] += rowStart[i - 1];//每一个位置加上之前的数据
 
 		for (size_t i = 0; i < terms; i++)
@@ -141,7 +141,7 @@ int main()
 		sm[i] = MatrixTerm(i / 3, i % 4, i);
 	SparseMatrix test(10, 10, size, sm);
 
-	cout<< endl << "原矩阵：\n";
+	cout << endl << "原矩阵：\n";
 
 	test.print();
 
